@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 8px;
+}
+
+header,
+nav,
+main,
+footer {
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+header,
+footer {
+  background-color: navy;
+  border: 1px solid navy;
+  border-radius: 15px;
+  color: #fff;
+  font-family: 'Antonio', sans-serif;
+  padding: 0.25rem;
+  text-align: center;
+  }
+
+header img {
+  float: right;
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+}
+
+ h2 {
+    border-bottom-style: solid;
+    border-color: rgba(241, 238, 23, 0.959);
+    border-bottom-width: thin;
+  }
+
+ul a:hover{
+  color:rgba(241, 238, 23, 0.959);
+}
+
+footer a {
+  color: white;
+}
