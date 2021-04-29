@@ -43,8 +43,18 @@ header img {
     font-size: 1rem;
   }
 
+  
+ul a{
+  padding: 0.25em 0.25em;
+  color: black;
+  line-height: 2em;
+}
+
 ul a:hover{
-  color:rgba(241, 238, 23, 0.959);
+  background-color:rgba(241, 238, 23, 0.959);
+  color: black;
+  border-radius: 4.5px;
+  box-shadow: 4.5px 4.5px 4.5px;
 }
 
 footer a {
