@@ -21,15 +21,14 @@
   main section:nth-child(3) {
     grid-column: span 2;
   }
-
-  main section picture {
+  
+  main section img {
     display: block;
   }
   
-  main section picture img {
+  main section img {
     width: 100%;
     height: auto;
-    border: 1px solid #000;
   }
   
 }

@@ -5,7 +5,7 @@
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
         max-width: 960px;
     }
   
@@ -13,3 +13,4 @@
       grid-column: span 1;
     }
   } 
+  
