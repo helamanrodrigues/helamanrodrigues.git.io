@@ -54,12 +54,12 @@ footer {
 /* Hearder Section */
 
 header {
-    align-items: center;
-    background-color: #253557;
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: .1rem 5px;
+  align-items: center;
+  background-color: #253557;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: .1rem 5px;
 }
 
 header div {
