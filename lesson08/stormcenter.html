@@ -53,7 +53,70 @@
 		</nav>
 <!-- CONTENT HERE -->
         <main>
-            
+            <h1>Storm Notification Form</h1>
+				<form method="get" action="thanks.html">
+				<fieldset>
+					<legend>Personal Information</legend>
+					<label class="top">Full Name* <input type="text" name="fullname" minlength="5" pattern="[A-Za-z] {3,)" autofocus required></label>
+					<label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+					<label class="top">Phone Number* <input type="tel" name="phone" placeholder="1235551234" required></label>
+					<label class="top">Zip Code* <input type="number" name="zipcode" required></label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Storm Information</legend>
+					<label class="top">Storm Date <input type="date" name="completeDate"></label>
+					<label class="top">Storm Type
+						<input name="type" list="stormlist"></label>
+					<datalist id="stormlist">
+						<option value="Flash">
+						<option value="Flood">
+						<option value="Hail">
+						<option value="Hurricane">
+						<option value="Thunderstorm">
+						<option value="Tornado">
+					</datalist>
+					
+					<label class="test" for="rating">Storm Severity &nbsp;&nbsp;&nbsp; </label>
+					<label class="range">
+						<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+						<span id="ratingvalue">5</span>
+					</label>
+			
+					<datalist id="tickmarks">
+						<option value="1">
+						<option value="2">
+						<option value="3">
+						<option value="4">
+						<option value="5">
+						<option value="6">
+						<option value="7">
+						<option value="8">
+						<option value="9">
+						<option value="10">
+					</datalist>
+
+					<label class="top">Storm Region
+						<select name="type">
+							<option disabled selected>Select Region ...</option>
+						<option value="preston">Preston</option>
+						<option value="sodasprings">Soda Springs</option>
+						<option value="fishheaven">Fish Heaven</option>
+						</select>	
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Additional Information</legend>
+					<label>User In-danger Level? </label>
+					<label class="sbs"><input type="radio" name="addinfo" value="yes"> Yes</label>
+            		<label class="sbs"><input type="radio" name="addinfo" value="Maybe"> Maybe</label>
+            		<label class="sbs"><input type="radio" name="addinfo" value="No"> No</label>
+
+					<label class="sbs">Comments<textarea name="comment" placeholder="Comments Here!"></textarea></label>
+				</fieldset>
+				<input type="submit" value="Report Storm" class="submitBtn">
+				</form>
 
         </main>
 

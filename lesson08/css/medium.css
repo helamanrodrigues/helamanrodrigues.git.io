@@ -43,6 +43,27 @@
 
     /* Finish Footer Section */
 
+    /* Form Section */
+
+    form fieldset {
+        padding: 2% 2% 0 2%;
+      }
+      
+    form label.top input, form label.top select {
+        margin-bottom: 2%;
+    }
+            
+    form label.range {
+    margin-bottom: 3%;
+    }
+      
+    form label.sbs {
+        padding: 1% 0;;
+    }
+      
+
+    /* Finish Form */
+
     /* Header Section*/
 
     header {

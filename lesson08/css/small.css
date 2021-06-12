@@ -30,6 +30,115 @@ body {
     padding: 0;
 }
 
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* FORM SECTION */
+
+form fieldset {
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  margin: 2rem 0;
+  padding: .5rem 2%;
+}
+
+form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top {
+  color: red;
+  display: block;
+  font-size: .8rem;
+  padding-top: 1rem;
+}
+
+form label.test{
+  color: red;
+  display: block;
+  font-size: .8rem;
+  padding-top: 1rem;
+}
+
+form label.range input {
+  font-size: 1rem;
+  max-width: 20rem;
+  width: 100%;
+}
+
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  background-color: rgba(0,0,0,.1);
+  border: solid 1px #999;
+  border-radius: 4px;
+  color: #555;
+  display: block;
+  font-size: 1rem;
+  max-width: 20rem;
+  padding: .75rem;
+  width: 100%;
+}
+
+form label.sbs {
+  color: #555;
+  display: block;
+  padding: .75rem 0;
+}
+
+form input.submitBtn {
+  background-color: rgb(121, 171, 187);
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  margin: 0 0 2rem 2%;
+  max-width: 20rem;
+  padding: .75rem 1.5rem;
+  width: 96%;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+form textarea {
+  background-color: rgba(0,0,0,.1);
+  border: solid 1px #999;
+  border-radius: 4px;
+  color: #555;
+  display: block;
+  height: 3em;
+  margin: .5em 0;
+  padding: .75em;  
+}
+
+#ratingvalue {
+  color: #2075ff;
+  margin: 0 15px;
+}
+
+.test {
+  align-items: center;
+  display: flex;
+}
+
+textarea:focus {
+  border-radius: 6px;
+  border: solid 2px #5054CE;
+  outline: none;
+}
+
+/*Finish Form */
+
 /* Footer Section */
 
 footer a {
@@ -148,7 +257,8 @@ main {
   background-color: white;
   margin: 0 auto;
   max-width: 1080px;
-  padding: 1em;
+  min-height: 20rem;
+  padding: 0 2%;
   text-align: left;
 }
 

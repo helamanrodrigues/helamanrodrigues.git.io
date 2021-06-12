@@ -19,3 +19,7 @@ function openSection(event, sectionName) {
     document.getElementById(sectionName).style.display = "block";
     event.currentTarget.className += " highlightTab";
   }
+
+  function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
