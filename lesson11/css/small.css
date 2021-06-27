@@ -325,6 +325,10 @@ main h1, h2, h3 {
   width: 100%;
 }
 
+#sectionNameTransition {
+  width: 50%;
+}
+
 #weatherSummary {
   background-color: rgb(255,255,255,.86);
   border: 1px solid gray;
