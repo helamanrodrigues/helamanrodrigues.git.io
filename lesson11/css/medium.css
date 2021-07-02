@@ -103,6 +103,25 @@
         padding: .1em 1em;
     }
 
+    #allTownInfo article {
+        flex-direction: row;
+    }
+    #allTownInfo article:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    #allTownInfo div {
+        width: 50%;
+    }
+    .townInfoImg {
+        width: 50%;
+    }
+
+    .articleImg {
+        margin: 0 0 15px 15px;
+        width: 50%;
+        float: right;
+    }   
+
     .article img {
         float: right;
         margin-left: 1em;
@@ -139,6 +158,10 @@
     /* test */
 
     #weatherSummary {
+        display: grid;
+    }
+
+    #weatherSummarySoda {
         display: grid;
     }
     

@@ -232,11 +232,78 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /* Main Section */
 
+#allTownInfo h3 {
+	margin-top: 10px;
+}
+
+#allTownInfo {
+  background: rgb(121, 171, 187);
+	border: 2px solid #000000;
+  display: flex;
+  flex-direction: column;
+	margin-top: 10px;
+  overflow: auto;
+	padding: 15px;
+}
+
+#allTownInfo article {
+  background: #cacfd4;
+  border: 2px solid #000000;
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	padding: 35px;
+}
+
+#allTownInfo img {
+	box-shadow: 0 0 20px #000000;
+  height: auto;
+	width: 100%; 
+}
+
+#allTownInfo div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+	padding: 15px;
+	text-align: center;
+}
+
+.townInfoImg {
+	margin: 0;
+  width: 100%;
+}
+
 .article {
   background-color: rgba(0,0,0,.1);
+  border: 2px solid black;
   margin-top: 10px;
   overflow: auto;
   padding: 15px;
+}
+
+#articleArea {
+  background: #cacfd4;
+	border: 2px solid #000000;
+	margin-top: 10px;
+  overflow: auto;
+	padding: 15px;
+}
+
+#articleArea h3 {
+	margin-top: 10px;
+}
+
+#articleArea img {
+  box-shadow: 0 0 20px #000000;
+  display: block;
+  height:	auto;
+	width: 100%;
+}	
+
+.articleImg {
+	margin: 0;
+	width: 100%;
 }
 
 .article img{
@@ -246,11 +313,48 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
   width: 100%;
 }
 
+.eventBorder {
+  align-content: center;
+  background-color: rgb(121, 171, 187);
+  border: 2px solid #000000;
+  margin: 15px auto;
+  max-width: 400px;
+  overflow: auto;
+  padding: 15px;
+}
+
+.eventArea {
+  align-items: center;
+  background-color: rgb(206, 206, 206);
+  border: 2px solid #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  overflow: auto;
+  padding: 15px;  
+}
+
+.eventArea h3 {
+  margin-bottom: 0;  
+}
+
+.eventArea li {
+  list-style-type: square;
+}
+
+.eventArea ul {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
 #forcastArea {
   display: none;
 }
 
 #forcastFive {
+  background-color: #003253;
   border: 1px solid #000000;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -258,7 +362,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 .forcastCol {
   align-items: center;
-  background-color: rgb(255,255,255,.86);
+  background-color: rgb(206, 206, 206);
   border: 1px solid gray;
   display: flex;
   flex-direction: column;
@@ -332,13 +436,13 @@ main h1, h2, h3 {
 #weatherSummary {
   background-color: rgb(255,255,255,.86);
   border: 1px solid gray;
-  box-shadow: 0 0 30px orangered;
+  box-shadow: 0 0 30px black;
   display: none;
   grid-template-columns: auto auto;
   left: 1em;
   padding: 1.5rem;
   position: absolute;
-  top: 27em;
+  top: 1em;
 }
 
 #weatherSummary h2 {
