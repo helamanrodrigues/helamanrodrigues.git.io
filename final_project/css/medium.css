@@ -134,6 +134,10 @@
     }
   
     /* ------------ CONTACT US Page ------------ */
+
+    iframe {
+      min-height: 320px;
+    }
     
     #contact-info {
       margin-top: 2rem;

@@ -617,6 +617,11 @@ html {
   }
   
   /* ------------ CONTACT PAGE -------------- */
+
+  iframe {
+    width: 100vw;
+    min-height: 240px;
+  }
     
   #contact-info img {
     max-width: 1.4rem;
