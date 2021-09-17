@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora');
 
 article {
-  color: black;
-  text-decoration: none;
+  background-color: white;
+  box-shadow: 2px 2px 3px #D3D3D3;
+  margin: 6vw .5vw;
+  padding: 35px 30px;
 }
 
 article a:hover {
@@ -16,8 +18,17 @@ article a:active {
 }
 
 body {
-  font-family: "Helvetica", "Arial", sans-serif;
-  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body > div {
+  background-color: #FAEBD7;
+  display: flex;
+  flex-flow: column;
 }
 
 body a {
@@ -34,24 +45,77 @@ body a:active {
   text-decoration: none;
 }
 
-header {
+figure {
   align-items: center;
-  background-color: #6495ED; 
   display: flex;
-  justify-content: left; 
-  padding: .1rem 5px;
+  justify-content: center;
+  margin-top: 15vw;
+}
+
+header {
+  background-color: #6495ED; 
+}
+
+header h1 {
+  font-family: Lora;
+  font-size: 9vw;
+  padding: 6vw 7vw 0 0;
+}
+
+header hr {
+  padding: 0;
+  width: 85vw;
+}
+
+header ul {
+  list-style: none;
+  margin-top: 0;
+  padding-bottom: 5px;
+}
+
+header li {
+  font-size: 3.5vw;
+  padding: 1vw 7vw 2vw 0;
 }
 
 header a {
   color: #FAEBD7;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: #FAEBD7;
+  text-decoration: none;
 }
 
 h1 {
   background-color: #6495ED;
 }
 
-h1 h2 {
-  font-family: "Lora";
+h2 {
+  font-family: Lora;
+  font-size: 1.5em;
+  margin-top: .5vw;
+}
+
+h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+h2 a:active {
+  color: #DEB887;
+}
+ 
+h2 a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+
+img {
+  width: 45vw;
 }
 
 li {
@@ -59,7 +123,7 @@ li {
 }
 
 main {
-  background-color: #FAEBD7;
+  padding: 0.4em;
 }
 
 nav {
@@ -77,11 +141,37 @@ nav a:active {
   text-decoration: none;
 }
 
+p {
+  font-size: .8em;
+  margin-bottom: 5px;
+}
+
 p a {
   color: #6495ED;
+  text-decoration: none;
 }
 
-
-.post-content {
-  background-color: white;
+p a:visited {
+  color: #6495ED;
+  text-decoration: none;
 }
+ 
+p a:active {
+  color: #DEB887;
+}
+ 
+p a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+
+.post-date {
+  font-size: .8em;
+  opacity: 0.5;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
