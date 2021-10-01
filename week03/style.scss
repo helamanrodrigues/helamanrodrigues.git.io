@@ -1,0 +1,219 @@
+// Variable assignment
+//set breakpoint sizes
+$break-large: 50em;
+
+//Colors
+$header-background-color: #6495ED;
+$body-background-color: #DEB887;
+$nav-background-color: #FAEBD7;
+$a-background-color: black;
+$article-background-color: white;
+
+//Decoration
+$text-decoration01: none;
+$decoration-text02: underline;
+$align: center;
+
+//Font
+$font-family: Lora;
+$family-font: Helvetica, Arial, sans-serif;
+
+//Number 0
+$zero: 0;
+
+
+//mixin
+@mixin breakpoint($break) {
+    @if $break==large {
+        @media (min-width: $break-large) {
+            @content;
+        }
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*height by default is the height of the content, this makes it 100% of the broswer window
+can also use the px,vh,vw (viewport height/width)*/
+html {
+    height: 100vh;
+}
+
+/*mini normalizer, reseting the portions and settings*/
+body {
+    font-family: $family-font;
+    font-size: 1.2em;
+    margin: $zero;
+    padding: $zero;
+    height: 100%;
+}
+
+body > div {
+    display: flex;
+    flex-flow: column;
+    background-color: $nav-background-color;
+    @include breakpoint(large) {
+     width: 80%;
+     position: absolute;
+     right: $zero
+    }
+}
+
+/*Page Header*/
+header {
+    background-color: $header-background-color;
+    h1 {
+        font-size: 9vw;
+        font-family: $font-family;
+        padding: 6vw 7vw 0 0;
+    }
+    hr {
+        width: 85vw;
+        padding: $zero;
+    }
+    /*Page Nav*/
+    ul {
+        list-style: $text-decoration01;
+        margin-top: $zero;
+        padding-bottom: 5px;
+    }
+    li {
+        font-size: 3.5vw;
+        padding: 1vw 7vw 2vw 0;
+    }
+    a {
+        text-decoration: $text-decoration01;
+        color: $nav-background-color;
+        display: flex;
+        justify-content: flex-end;
+        &:visited {
+            text-decoration: $text-decoration01;
+            color: $nav-background-color;
+        }
+        &:active {
+            color: $body-background-color;
+        }
+        &:hover {
+            text-decoration: $decoration-text02;
+            color: $article-background-color;
+        }
+    }
+}
+
+@include breakpoint(large) {
+    header {
+        height: 100vw;
+        left: $zero;
+        position: fixed;
+        width: 20vw;
+        h1 {
+            font-size: 1.8em;
+            padding: 2vw 2.5vw 0 2vw;
+            text-align: right;
+            margin-bottom: $zero;
+        }
+        hr {
+            width: 15vw;
+        }
+        ul {
+            padding: 0 2.5vw 2vw 0;
+        }
+        li {
+            font-size: .7em;
+            padding: 0 0 .9vw 0;
+        }
+    }
+}
+
+
+/*Body*/
+main {
+    padding: 0.4em;
+}
+
+article {
+    margin: 6vw .5vw;
+    padding: 35px 30px;
+    background-color: $article-background-color;
+    box-shadow: 2px 2px 3px #D3D3D3;
+    @include breakpoint(large) {
+        margin: 3vw 5vw;
+        padding: 40px 50px;
+    }
+}
+
+.post-date {
+    opacity: 0.5;
+    font-size: .8em;
+    @include breakpoint(large) {
+        font-size: 1.5vw;
+    }
+}
+
+h2 {
+    margin-top: .5vw;
+    font-size: 1.5em;
+    font-family: $font-family;
+    a {
+        text-decoration: $text-decoration01;
+        color: $a-background-color;
+    }
+    :active {
+        color: $body-background-color;
+    }
+    :hover {
+        color: $header-background-color;
+        text-decoration: $decoration-text02;
+    }
+    @include breakpoint(large) {
+        font-size: 3.5vw;
+    }
+}
+
+figure {
+    display: flex;
+    justify-content: $align;
+    align-items: $align;
+    margin-top: 15vw;
+    @include breakpoint(large) {
+        margin-top: 6vw;
+    }
+}
+
+img {
+    width: 45vw;
+    @include breakpoint(large) {
+        width: 22vw;
+    }
+}
+
+p {
+    font-size: .8em;
+    margin-bottom: 5px;
+    a {
+        text-decoration: $text-decoration01;
+        color: $header-background-color;
+    }
+    :visited {
+        text-decoration: $text-decoration01;
+        color: $header-background-color;
+    }
+    :active {
+        color: $body-background-color;
+    }
+    :hover {
+        text-decoration: underline;
+        color: $header-background-color;
+    }
+    @include breakpoint(large) {
+        font-size: .9em;
+    }
+}
