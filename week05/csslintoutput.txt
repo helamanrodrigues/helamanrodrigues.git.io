@@ -1,0 +1,62 @@
+
+test.css
+   5:27  ×  Expected "#D3D3D3" to be "#d3d3d3"                                        color-hex-case                                
+   6:15  ×  Expected a leading zero                                                   number-leading-zero                           
+  11:10  ×  Expected "#6495ED" to be "#6495ed"                                        color-hex-case                                
+  16:10  ×  Expected "#DEB887" to be "#deb887"                                        color-hex-case                                
+  17:25  ×  Unexpected whitespace at end of line                                      no-eol-whitespace                             
+  17:26  ×  Expected newline before "}" of a multi-line block                         block-closing-brace-newline-before            
+  29:21  ×  Expected "#FAEBD7" to be "#faebd7"                                        color-hex-case                                
+  34:1   ×  Expected selector "body a" to come before selector "article a:hover"      no-descending-specificity                     
+  34:1   ×  Expected selector "body a" to come before selector "article a:active"     no-descending-specificity                     
+  44:10  ×  Expected "#DEB887" to be "#deb887"                                        color-hex-case                                
+  56:21  ×  Expected "#6495ED" to be "#6495ed"                                        color-hex-case                                
+  56:29  ×  Unexpected whitespace at end of line                                      no-eol-whitespace                             
+  56:30  ×  Expected newline before "}" of a multi-line block                         block-closing-brace-newline-before            
+  60:16  ×  Unexpected missing generic font family                                    font-family-no-missing-generic-family-keyword 
+  81:1   ×  Expected selector "header a" to come before selector "article a:hover"    no-descending-specificity                     
+  81:1   ×  Expected selector "header a" to come before selector "article a:active"   no-descending-specificity                     
+  81:1   ×  Expected selector "header a" to come before selector "body a:hover"       no-descending-specificity                     
+  81:1   ×  Expected selector "header a" to come before selector "body a:active"      no-descending-specificity                     
+  82:10  ×  Expected "#FAEBD7" to be "#faebd7"                                        color-hex-case                                
+  89:10  ×  Expected "#FAEBD7" to be "#faebd7"                                        color-hex-case                                
+  93:1   ×  Expected selector "h1" to come before selector "header h1"                no-descending-specificity                     
+  94:21  ×  Expected "#6495ED" to be "#6495ed"                                        color-hex-case                                
+  98:16  ×  Unexpected missing generic font family                                    font-family-no-missing-generic-family-keyword 
+ 100:15  ×  Expected a leading zero                                                   number-leading-zero                           
+ 103:1   ×  Expected selector "h2 a" to come before selector "article a:hover"        no-descending-specificity                     
+ 103:1   ×  Expected selector "h2 a" to come before selector "article a:active"       no-descending-specificity                     
+ 103:1   ×  Expected selector "h2 a" to come before selector "body a:hover"           no-descending-specificity                     
+ 103:1   ×  Expected selector "h2 a" to come before selector "body a:active"          no-descending-specificity                     
+ 103:1   ×  Expected selector "h2 a" to come before selector "header a:visited"       no-descending-specificity                     
+ 109:10  ×  Expected "#DEB887" to be "#deb887"                                        color-hex-case                                
+ 111:1   ×  Unexpected whitespace at end of line                                      no-eol-whitespace                             
+ 113:10  ×  Expected "#6495ED" to be "#6495ed"                                        color-hex-case                                
+ 121:1   ×  Expected selector "li" to come before selector "header li"                no-descending-specificity                     
+ 130:10  ×  Expected "#FAEBD7" to be "#faebd7"                                        color-hex-case                                
+ 140:10  ×  Expected "#DEB887" to be "#deb887"                                        color-hex-case                                
+ 145:14  ×  Expected a leading zero                                                   number-leading-zero                           
+ 149:1   ×  Expected selector "p a" to come before selector "article a:hover"         no-descending-specificity                     
+ 149:1   ×  Expected selector "p a" to come before selector "article a:active"        no-descending-specificity                     
+ 149:1   ×  Expected selector "p a" to come before selector "body a:hover"            no-descending-specificity                     
+ 149:1   ×  Expected selector "p a" to come before selector "body a:active"           no-descending-specificity                     
+ 149:1   ×  Expected selector "p a" to come before selector "header a:visited"        no-descending-specificity                     
+ 149:1   ×  Expected selector "p a" to come before selector "h2 a:active"             no-descending-specificity                     
+ 149:1   ×  Expected selector "p a" to come before selector "h2 a:hover"              no-descending-specificity                     
+ 149:1   ×  Expected selector "p a" to come before selector "nav a:hover"             no-descending-specificity                     
+ 149:1   ×  Expected selector "p a" to come before selector "nav a:active"            no-descending-specificity                     
+ 150:10  ×  Expected "#6495ED" to be "#6495ed"                                        color-hex-case                                
+ 155:10  ×  Expected "#6495ED" to be "#6495ed"                                        color-hex-case                                
+ 158:1   ×  Unexpected whitespace at end of line                                      no-eol-whitespace                             
+ 160:10  ×  Expected "#DEB887" to be "#deb887"                                        color-hex-case                                
+ 162:1   ×  Unexpected whitespace at end of line                                      no-eol-whitespace                             
+ 164:10  ×  Expected "#6495ED" to be "#6495ed"                                        color-hex-case                                
+ 169:14  ×  Expected a leading zero                                                   number-leading-zero                           
+ 174:6   ×  Expected no more than 1 declaration                                       declaration-block-single-line-max-declarations
+ 174:7   ×  Expected single space after "{" of a single-line block                    block-opening-brace-space-after               
+ 174:65  ×  Expected single space before "}" of a single-line block                   block-closing-brace-space-before              
+ 176:3   ×  Expected whitespace after "/*"                                            comment-whitespace-inside                     
+ 176:77  ×  Expected whitespace before "*/"                                           comment-whitespace-inside                     
+ 177:3   ×  Expected no more than 1 declaration                                       declaration-block-single-line-max-declarations
+ 177:90  ×  Unexpected missing end-of-source newline                                  no-missing-end-of-source-newline
+

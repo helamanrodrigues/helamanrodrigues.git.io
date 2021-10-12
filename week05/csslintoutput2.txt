@@ -1,0 +1,5 @@
+
+test.css
+ 174:6  ×  Expected no more than 1 declaration   declaration-block-single-line-max-declarations
+ 177:3  ×  Expected no more than 1 declaration   declaration-block-single-line-max-declarations
+
